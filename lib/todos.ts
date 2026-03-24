@@ -81,6 +81,24 @@ export const todos: TodoItem[] = [
 
 export const timeline = [
   {
+    date: "2026-03-24",
+    title: "AI 강의노트 Cloud Run 배포 + Flutter APK",
+    desc: "긴 텍스트 Map-Reduce 청크 분할, 백그라운드 녹음, PWA 아이콘",
+    type: "deploy" as const,
+  },
+  {
+    date: "2026-03-24",
+    title: "momoi Whisper 환각 방지 4종 패치",
+    desc: "무음 제거, 한국어 prompt 힌트, 환각 필터, language:ko",
+    type: "update" as const,
+  },
+  {
+    date: "2026-03-24",
+    title: "AI 앱 컬렉션 14종 일괄 배포",
+    desc: "글쓰기분석, 번역, 이메일, 문서요약, 회의록 등",
+    type: "deploy" as const,
+  },
+  {
     date: "2026-03-22",
     title: "바이브 코딩 놀이터 v1.2 배포",
     desc: "새로운 튜토리얼 모드 추가",
