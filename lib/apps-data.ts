@@ -1,5 +1,6 @@
 export type AppStatus = "live" | "dev" | "stopped";
 export type HostingType = "Cloud Run" | "Vercel" | "GitHub Pages" | "Flutter APK";
+export type GcpProject = "momoi" | "songbit";
 
 export interface AppData {
   name: string;
@@ -11,8 +12,13 @@ export interface AppData {
   techStack: string[];
 }
 
-const CR = (svc: string) =>
-  `https://${svc}-1047636559780.asia-northeast3.run.app`;
+// GCP 프로젝트별 Cloud Run URL 헬퍼
+const GCP_PROJECTS: Record<string, string> = {
+  momoi: "1047636559780",       // psh0825@gmail.com
+  songbit: "940684465594",      // support@lightonpluslab.com
+};
+const CR = (svc: string, project: string = "momoi") =>
+  `https://${svc}-${GCP_PROJECTS[project]}.asia-northeast3.run.app`;
 
 export const apps: AppData[] = [
   // === 메인 앱 ===
@@ -30,9 +36,9 @@ export const apps: AppData[] = [
     icon: "🎵",
     status: "live",
     hosting: "Cloud Run",
-    url: CR("songbit"),
-    lastDeploy: "2026-03-19",
-    techStack: ["Next.js", "Suno"],
+    url: CR("songbit", "songbit"),
+    lastDeploy: "2026-03-25",
+    techStack: ["Next.js", "Suno", "Gemini"],
   },
   {
     name: "Vibe Studio",

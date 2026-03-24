@@ -37,7 +37,7 @@ export const todos: TodoItem[] = [
   },
   {
     id: 5,
-    text: "Songbit 결제 모듈 연동",
+    text: "Songbit 결제 모듈 연동 (songbit-app 프로젝트)",
     done: false,
     priority: "high",
     category: "개발",
@@ -80,6 +80,18 @@ export const todos: TodoItem[] = [
 ];
 
 export const timeline = [
+  {
+    date: "2026-03-25",
+    title: "SongBit GCP 프로젝트 분리 (songbit-app)",
+    desc: "support@lightonpluslab.com 계정으로 독립 프로젝트 이전, 기존 ai-music-studio 삭제",
+    type: "infra" as const,
+  },
+  {
+    date: "2026-03-24",
+    title: "통신판매업신고 정보 전체 앱 반영 (39개 파일)",
+    desc: "제 2026-안양동안-0514 호 — 홈페이지, momoi, AI앱 14종, Flutter 앱 등",
+    type: "update" as const,
+  },
   {
     date: "2026-03-24",
     title: "AI 강의노트 Cloud Run 배포 + Flutter APK",
