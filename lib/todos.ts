@@ -94,6 +94,12 @@ export const timeline = [
   },
   {
     date: "2026-03-24",
+    title: "성경탐험 Flutter APK 빌드",
+    desc: "Next.js 웹앱 → Flutter 네이티브 포팅 (성경읽기, AI채팅, 퀴즈, 뱃지)",
+    type: "deploy" as const,
+  },
+  {
+    date: "2026-03-24",
     title: "AI 앱 컬렉션 14종 일괄 배포",
     desc: "글쓰기분석, 번역, 이메일, 문서요약, 회의록 등",
     type: "deploy" as const,

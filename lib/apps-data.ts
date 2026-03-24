@@ -67,8 +67,8 @@ export const apps: AppData[] = [
     status: "live",
     hosting: "Cloud Run",
     url: CR("bible-explorer"),
-    lastDeploy: "2026-03-21",
-    techStack: ["Next.js", "Gemini"],
+    lastDeploy: "2026-03-24",
+    techStack: ["Next.js", "Flutter", "Gemini", "Firebase"],
   },
   {
     name: "AI 강의노트",
